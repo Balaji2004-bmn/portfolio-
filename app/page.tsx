@@ -4,20 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import {
-  Github,
-  Linkedin,
-  Mail,
-  Download,
-  Phone,
-  MapPin,
-  Code,
-  Award,
-  Trophy,
-  Star,
-  ExternalLink,
-  Calendar,
-} from "lucide-react"
+import { Github, Linkedin, Mail, Download, Phone, MapPin, Code, Award, Trophy, Star, ExternalLink, Calendar } from 'lucide-react'
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("home")
@@ -326,6 +313,57 @@ export default function Portfolio() {
             Featured Projects
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {/* Advanced Scientific Calculator */}
+            <Card className="group hover:shadow-2xl transition-all duration-500 transform hover:scale-105 bg-gradient-to-br from-red-50 to-orange-50 border-red-200 overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-red-600 via-orange-600 to-yellow-600 rounded-t-lg overflow-hidden flex items-center justify-center relative">
+                <div className="text-center text-white">
+                  <div className="text-4xl mb-2">🧮</div>
+                  <h4 className="text-xl font-bold">Advanced Calculator</h4>
+                  <p className="text-sm opacity-90">Scientific Functions</p>
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle className="text-red-800 flex items-center">
+                  <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
+                  Advanced Scientific Calculator
+                </CardTitle>
+                <CardDescription className="text-gray-600">
+                  A feature-rich, modern scientific calculator built with HTML, CSS, and JavaScript, providing
+                  professional-grade mathematical functions.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <Badge className="bg-red-100 text-red-800">HTML</Badge>
+                  <Badge className="bg-orange-100 text-orange-800">CSS</Badge>
+                  <Badge className="bg-yellow-100 text-yellow-800">JavaScript</Badge>
+                </div>
+                <div className="flex space-x-2">
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="flex items-center space-x-1 hover:bg-red-50 border-red-200 bg-transparent"
+                    asChild
+                  >
+                    <a
+                      href="https://github.com/Balaji2004-bmn/Advanced-Calculator.git"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Github className="w-4 h-4" />
+                      <span>Code</span>
+                    </a>
+                  </Button>
+                  <Button size="sm" className="flex items-center space-x-1 bg-red-600 hover:bg-red-700" asChild>
+                    <a href="https://parallel-existence.surge.sh" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4" />
+                      <span>Demo</span>
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Student Management System */}
             <Card className="group hover:shadow-2xl transition-all duration-500 transform hover:scale-105 bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200 overflow-hidden">
               <div className="aspect-video bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 rounded-t-lg overflow-hidden flex items-center justify-center relative">
