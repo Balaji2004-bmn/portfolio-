@@ -1,30 +1,51 @@
-# Create portfolio
+# Balaji Nidavanche's Cyberpunk Portfolio
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+This is a personal portfolio website for Balaji Nidavanche, a Full Stack Web Developer, designed with a cyberpunk aesthetic.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/bmn636169-4687s-projects/v0-create-portfolio)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/PzsulpqEKXQ)
+## Features
 
-## Overview
+-   **Cyberpunk Theme:** Dark background, matrix rain effect, and green glowing accents.
+-   **Responsive Design:** Optimized for various screen sizes.
+-   **Sections:** Home, About, Skills, Projects, Certificates, Achievements, and Contact.
+-   **Dynamic Matrix Rain:** A customizable matrix rain effect in the background.
+-   **Downloadable Resume:** A button to download the resume.
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## Technologies Used
+
+-   Next.js (App Router)
+-   React
+-   Tailwind CSS
+-   shadcn/ui
+-   Lucide React Icons
+
+## Getting Started
+
+1.  **Clone the repository:**
+    \`\`\`bash
+    git clone [repository-url]
+    cd [repository-name]
+    \`\`\`
+2.  **Install dependencies:**
+    \`\`\`bash
+    npm install
+    # or
+    yarn install
+    \`\`\`
+3.  **Run the development server:**
+    \`\`\`bash
+    npm run dev
+    # or
+    yarn dev
+    \`\`\`
+    Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+4.  **Customize your portfolio:**
+    -   Replace `/public/images/balaji-new-photo.jpg` with your own photo.
+    -   Update the content in `app/page.tsx` with your personal details, skills, projects, certificates, and achievements.
+    -   Replace `/public/resume.pdf` with your actual resume file.
 
 ## Deployment
 
-Your project is live at:
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-button) from the creators of Next.js.
 
-**[https://vercel.com/bmn636169-4687s-projects/v0-create-portfolio](https://vercel.com/bmn636169-4687s-projects/v0-create-portfolio)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/PzsulpqEKXQ](https://v0.dev/chat/projects/PzsulpqEKXQ)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
